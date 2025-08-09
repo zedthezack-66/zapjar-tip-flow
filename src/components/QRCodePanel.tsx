@@ -19,6 +19,9 @@ const QRCodePanel = ({ lnurl, onTipped }: QRCodePanelProps) => {
     setAmount("");
   };
 
+  // The LNURL-pay string is passed directly to the QR code without any encoding
+  // To customize: update the LNURL constant in src/pages/Index.tsx
+
   return (
     <section aria-label="Lightning Tip" className="w-full">
       <div className="mx-auto max-w-md">

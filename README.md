@@ -33,9 +33,34 @@ npm run dev
 
 ---
 
-Feel free to customize the LNURL-pay URL in the QR code component with your actual static LNURL-pay link.
+## Customization
 
-### Static LNURL-pay QR code placeholder
+### Updating the LNURL-pay String
+
+To use your own Lightning tip address:
+
+1. Open `src/pages/Index.tsx`
+2. Find the `LNURL` constant (around line 13)
+3. Replace the string with your static LNURL-pay link:
+
+```javascript
+const LNURL = "your_lnurl_pay_string_here";
 ```
-lnurl1dp68gurn8ghj7mrww4exctnv9hxymrww4jhyctnv9hxymrww4jhyctnv9hxymrwvdhk6tmvde6x2ctv9skx7un0w4exctn
-```
+
+### How to Get a Static LNURL-pay String
+
+1. Use a Lightning service provider that offers static LNURL-pay (like LNbits, BTCPay Server, or Alby)
+2. Generate a static LNURL-pay link from your Lightning node
+3. The string should start with `lnurl1` and be bech32 encoded
+
+### Testing the QR Code
+
+1. Save your changes and the app will automatically reload
+2. Use any Lightning wallet that supports LNURL-pay to scan the QR code:
+   - Phoenix Wallet
+   - Breez
+   - Wallet of Satoshi
+   - Alby Extension
+   - Zeus
+3. Your wallet should prompt you to enter a tip amount
+4. Complete the payment to test the full flow

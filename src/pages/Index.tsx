@@ -8,6 +8,8 @@ import RecentTipsFeed, { Tip } from "@/components/RecentTipsFeed";
 import FooterBrand from "@/components/FooterBrand";
 import { toast } from "@/hooks/use-toast";
 
+// Replace this LNURL-pay string with your own static LNURL-pay link
+// This is the main configuration point for the Lightning tip functionality
 const LNURL = "lnurl1dp68gurn8ghj7mrww4exctnv9hxymrww4jhyctnv9hxymrww4jhyctnv9hxymrwvdhk6tmvde6x2ctv9skx7un0w4exctn";
 
 const useWindowSize = () => {
