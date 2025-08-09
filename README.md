@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
+# ZapJar — Lightning Tip Jar
 
-## Project info
+## Setup & Run
 
-**URL**: https://lovable.dev/projects/fc70936b-2b88-4943-9c7b-74e16e169e4b
+1. Clone repo and install dependencies:
 
-## How can I edit this code?
+```bash
+npm install
+```
 
-There are several ways of editing your application.
+2. To run locally:
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/fc70936b-2b88-4943-9c7b-74e16e169e4b) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+3. Open `http://localhost:8080` in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## How to Use
 
-**Use GitHub Codespaces**
+- Open the web page.
+- Scan the big static LNURL-pay QR code using your Lightning wallet app.
+- Your wallet will prompt you to enter any tip amount.
+- Complete the payment.
+- See a thank-you confirmation with confetti on the page.
+- Watch recent anonymous tips appear below.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Notes
 
-## What technologies are used for this project?
+- This app uses a static LNURL-pay QR code, so no backend invoice generation is required.
+- Light and dark modes are supported; toggle in the top right.
+- The spinning Bitcoin logo in the background adds a modern fintech vibe.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Feel free to customize the LNURL-pay URL in the QR code component with your actual static LNURL-pay link.
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/fc70936b-2b88-4943-9c7b-74e16e169e4b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Static LNURL-pay QR code placeholder
+```
+lnurl1dp68gurn8ghj7mrww4exctnv9hxymrww4jhyctnv9hxymrww4jhyctnv9hxymrwvdhk6tmvde6x2ctv9skx7un0w4exctn
+```

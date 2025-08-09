@@ -18,6 +18,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        hero:
+          "bg-[image:var(--gradient-primary)] text-primary-foreground shadow-[var(--shadow-glow)] hover:opacity-95",
+        neon:
+          "border-2 border-brand-blue/50 text-foreground hover:bg-brand-blue/10 focus-visible:ring-brand-blue"
       },
       size: {
         default: "h-10 px-4 py-2",
